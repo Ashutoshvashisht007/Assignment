@@ -1,0 +1,108 @@
+.card{
+    display: flex;
+    height: 255px;
+    margin-top: 20px;
+
+    .cardLeft{
+        margin: 75px 58px 77px 42px;
+        @include flex(column,center,center,0);
+        >img{
+            width: 141px;
+            height: 103px;
+        }
+
+        >span{
+            @include size;
+            margin-top: 10px;
+            color: #626E79;
+        }
+    }
+
+    .cardCenter{
+        margin-right: 31px;
+        width: 501px;
+        .cardCenterp1{
+            margin-top: 21px;
+            width: 490px;
+            @include size(400,16px);
+            color: $colorDesc;
+            text-align: justify;
+            margin-bottom: 4px;
+        }
+
+        .cardCenterspan1{
+            @include size(700,16px);
+            color: #2C384A;
+        }
+
+        .cardCenterp2{
+            @include size(400,16px);
+            color: $colorDesc;
+            margin-left: 18px;
+            margin-bottom: 22px;
+            margin-top: 10px;
+        }
+
+        .cardCenterspan2{
+            display: flex;
+            align-items: center;
+            @include size(400,16px);
+            color: $colorShow;
+            // margin-right: 3px;
+
+            >img{
+                margin-left: 3px;
+                height: 16px;
+                width: 16px;
+            }
+        }
+    }
+
+    .cardRight{
+        @include flex(column,space-between,center,0);
+        width: 232px;
+
+        .cardRightTop{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 135px;
+            height: 118px;
+            border-radius: 0px 0px 12px 12px;
+            background-color: #F3F9FF;
+            margin-right: 25px;
+
+            .cardRightTopSpan1{
+                @include size(400,32px);
+                color: #074786;
+            }
+
+            .cardRightTopSpan2{
+                margin-top: 6px;
+                @include size(400,14px);
+                color: #074786;
+            }
+
+            >img{
+                width: 66px;
+                height: 11px;
+                margin-top: 8px;
+            }
+        }
+
+        .cardRightBottom{
+            margin-bottom: 17px;
+            margin-right: 25px;
+
+            >button{
+                width: 232px;
+                height: 48px;
+                background-color: #1B88F4;
+                border: none;
+                border-radius: 12px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}

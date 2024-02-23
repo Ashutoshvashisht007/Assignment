@@ -9,4 +9,77 @@
     background: #FBFCFD;
     border-radius: 0px;
 
+    .homeContainer {
+        margin-left: 273px;
+        width: 1006px;
+        >span {
+            @include size(400,48px);
+            color: $colorTypo;
+        }
+
+        .homeContainerDesc {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 11.67px;
+            border-top: 2px solid #E1E4E6;
+            border-bottom: 1.33px solid #E1E4E6;
+
+            .homeContainerDescleft {
+                margin-top: 12px;
+                margin-bottom: 9.67px;
+                display: flex;
+                align-items: center;
+
+                >span {
+                    @include size(400,14px);
+                    color: $colorDesc;
+                    width: 205px;
+                    margin-right: 12px;
+                }
+
+                >img {
+                    margin-right: 8px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .homeContainerDescright {
+                margin-top: 12px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 9.67px;
+            }
+        }
+
+        .homeContainerTools {
+            margin-top: 15px;
+            margin-left: 16px;
+            display: flex;
+            >span {
+                @include size;
+                color: $colorDesc;
+                margin-right: 20px;
+                width: 105px;
+                height: 36px;
+            }
+        }
+
+        .homeContainerhosting{
+            margin-top: 16px;
+            margin-left: 5px;
+            >span{
+                @include size;
+                color: #727D87;
+                margin-right: 10px;
+            }
+        }
+
+        .homeContainerMain{
+            margin-top: 40px;
+        }
+    }
+
 }

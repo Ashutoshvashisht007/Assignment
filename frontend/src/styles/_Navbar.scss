@@ -36,8 +36,7 @@
         >span{
             color: $colorNavbar;
             margin-right: 53px;
-            font-weight: 400;
-            font-size: 14px;
+            @include size(400,14px);
             line-height: 20px;
             height: 24px;
             cursor: pointer;

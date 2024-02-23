@@ -11,10 +11,14 @@
 
   $color1: #212731;
   $colorNavbar: #D1D6DA;
+  $colorTypo: #2C384A;
+  $colorDesc: #4B5665;
+  $colorShow: #1B88F4;
 
   @import "mixin";
   @import "Navbar";
   @import "Home";
+  @import "Card";
 
   .mainContainer{
     width: 1614px;

@@ -4,6 +4,11 @@
     text-transform: $case;
   }
   
+@mixin size($wei: 400,$size: 13px){
+  font-weight: $wei;
+  font-size: $size;
+} 
+  
   @mixin flex(
     $dir: row,
     $justifyContent: center,
