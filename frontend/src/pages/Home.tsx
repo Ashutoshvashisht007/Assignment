@@ -61,7 +61,7 @@ const Home = () => {
         </div>
         <main className="homeContainerMain">
           {
-            dummyData.map((data,idx) => <Card key={idx} p1={data.p1} p2 = {data.p2} rating={data.rating} comment={data.comment} img={data.img} />)
+            dummyData.map((data,idx) => <Card key={idx} idx={idx} p1={data.p1} p2 = {data.p2} rating={data.rating} comment={data.comment} imgg={data.img} />)
           }
         </main>
       </div>
