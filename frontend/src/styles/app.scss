@@ -1,0 +1,25 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  $color1: #212731;
+  $colorNavbar: #D1D6DA;
+
+  @import "mixin";
+  @import "Navbar";
+  @import "Home";
+
+  .mainContainer{
+    width: 1614px;
+    height: 2900px;
+  }
+
+
+

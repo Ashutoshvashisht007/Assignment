@@ -1,0 +1,46 @@
+.navbar {
+    width: 1592px;
+    height: 64px;
+    background-color: $color1;
+    @include flex(row,unset,center);
+    position: relative;
+
+    .navbarSearch {
+        @include flex(row, center, center);
+        background-color: white;
+        width: 258px;
+        height: 37px;
+        border-radius: 8px;
+        border: 1px;
+        position: absolute;
+        left: 480px;
+
+        >img{
+            margin-left: 9px;
+            width: 24px;
+            height: 24px;
+        }
+
+        >input {
+            outline: none;
+            width: 258px;
+            height: 37px;
+            border-radius: 8px;
+            border: 1px;
+        }
+    }
+
+    .navbarRight{
+        position: absolute;
+        left: 817px;
+        >span{
+            color: $colorNavbar;
+            margin-right: 53px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            height: 24px;
+            cursor: pointer;
+        }
+    }
+}
