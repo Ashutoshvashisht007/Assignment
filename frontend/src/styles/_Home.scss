@@ -12,8 +12,9 @@
     .homeContainer {
         margin-left: 273px;
         width: 1006px;
+
         >span {
-            @include size(400,48px);
+            @include size(400, 48px);
             color: $colorTypo;
         }
 
@@ -33,7 +34,7 @@
                 align-items: center;
 
                 >span {
-                    @include size(400,14px);
+                    @include size(400, 14px);
                     color: $colorDesc;
                     width: 205px;
                     margin-right: 12px;
@@ -58,6 +59,7 @@
             margin-top: 15px;
             margin-left: 16px;
             display: flex;
+
             >span {
                 @include size;
                 color: $colorDesc;
@@ -67,18 +69,194 @@
             }
         }
 
-        .homeContainerhosting{
+        .homeContainerhosting {
             margin-top: 16px;
             margin-left: 5px;
-            >span{
+
+            >span {
                 @include size;
                 color: #727D87;
                 margin-right: 10px;
             }
         }
 
-        .homeContainerMain{
+        .homeContainerMain {
             margin-top: 40px;
+
+            .homeContainerMainCard {
+                display: flex;
+                height: 436px;
+                margin-top: 20px;
+                margin-bottom: 80px;
+                position: relative;
+            }
+
+            .MaincardNumber {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                margin-top: 30px;
+                left: -22px;
+                border: 1px solid #E1E4E6;
+            }
+
+            .MaincardLeft {
+                margin: 75px 58px 77px 42px;
+                @include flex(column, center, center, 0);
+
+                >img {
+                    width: 141px;
+                    height: 103px;
+                }
+
+                >span {
+                    @include size;
+                    margin-top: 10px;
+                    color: #626E79;
+                }
+            }
+
+            .MaincardCenter {
+                margin-right: 31px;
+                width: 501px;
+                @include flex(column, start, start, 0);
+
+                .MaincardCenterp1 {
+                    margin-top: 21px;
+                    width: 490px;
+                    @include size(400, 16px);
+                    color: $colorDesc;
+                    text-align: justify;
+                    margin-bottom: 4px;
+                }
+
+                .MaincardCenterspan0{
+                    @include size;
+                    background-color: #F2F4F7;
+                    color: #074786;
+                    margin-top: 9px
+                }
+
+                .MaincardCenterspan1 {
+                    @include size(700, 16px);
+                    color: #2C384A;
+                    margin-top: 4px;
+                }
+
+                .MaincardCenterdiv1 {
+                    width: 505px;
+                    height: 116px;
+                    background-color: #FFF4ED;
+
+                    >div{
+                        margin-top: 11px;
+                        .dds1{
+                            color: #1B88F4;
+                            @include size(400,16px);
+                            background-color: #FFFFFF;
+                            border-radius: 4px;
+                            margin-left: 12px;
+                            text-align: center;
+                            padding: 4px;
+                        }
+
+                        .dds2{
+                            @include size(400,15px);
+                            color: #4B5665;
+                            margin-left: 16px;
+                        }
+                    }
+                }
+
+                .MaincardCenterspan2 {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    @include size(400, 16px);
+                    color: $colorShow;
+                    top: 386px;
+                    left: 200px;
+                }
+                .MainCardCheckbox{
+                    @include flex(column, start,start,0);
+                    margin-top: 15px;
+
+                    >span{
+                        color: #2C384A;
+                        @include size(400,16px);
+                    }
+
+                    >div{
+                        margin-top: 8px;
+                        >label{
+                            >input{
+                                color: #0855A1;
+                                border-radius: 50%;
+                                border: none;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .MaincardRight{
+                @include flex(column,space-between,center,0);
+                width: 232px;
+        
+                .MaincardRightTop{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 135px;
+                    height: 118px;
+                    border-radius: 0px 0px 12px 12px;
+                    background-color: #F3F9FF;
+                    margin-right: 25px;
+        
+                    .MaincardRightTopSpan1{
+                        @include size(400,32px);
+                        color: #074786;
+                    }
+        
+                    .MaincardRightTopSpan2{
+                        margin-top: 6px;
+                        @include size(400,14px);
+                        color: #074786;
+                    }
+        
+                    >img{
+                        width: 66px;
+                        height: 11px;
+                        margin-top: 8px;
+                    }
+                }
+        
+                .MaincardRightBottom{
+                    margin-bottom: 17px;
+                    margin-right: 25px;
+        
+                    >button{
+                        width: 232px;
+                        height: 48px;
+                        background-color: #1B88F4;
+                        border: none;
+                        border-radius: 12px;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .homeContainerMainSpan{
+                @include size(400,32px);
+                color: #2C384A;
+                margin-top: 80px;
+            }
         }
     }
 

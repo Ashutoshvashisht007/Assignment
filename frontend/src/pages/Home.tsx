@@ -1,4 +1,6 @@
+import { useState } from "react";
 import Card from "../components/Card"
+import DealsCard from "../components/DealsCard";
 
 const dummyData = [
   {
@@ -25,6 +27,13 @@ const dummyData = [
 ]
 
 const Home = () => {
+
+  const [isChecked, setIsChecked] = useState(true);
+
+  const handleChange = () => {
+    setIsChecked(!isChecked);
+  };
+
   return (
     <div className="home">
       <div className="homeContainer">
@@ -61,8 +70,67 @@ const Home = () => {
         </div>
         <main className="homeContainerMain">
           {
-            dummyData.map((data,idx) => <Card key={idx} idx={idx} p1={data.p1} p2 = {data.p2} rating={data.rating} comment={data.comment} imgg={data.img} />)
+            dummyData.map((data, idx) => <Card key={idx} idx={idx} p1={data.p1} p2={data.p2} rating={data.rating} comment={data.comment} imgg={data.img} />)
           }
+          <div className="homeContainerMainCard">
+            <span className='MaincardNumber'>4</span>
+            <div className="MaincardLeft">
+              <img src="/src/assets/images/pc.png" alt="" />
+              <span>CDK</span>
+            </div>
+            <div className="MaincardCenter">
+              <p className="MaincardCenterp1"><b>CDK Resposive Builder:</b> An extensive library of widgets and apps, and detailed step-by-step guides</p>
+              <span className="MaincardCenterspan0">26% Off</span>
+              <span className="MaincardCenterspan1">Main highlights</span>
+              <div className="MaincardCenterdiv1">
+                <div>
+                  <span className="dds1">9.9</span>
+                  <span className="dds2">building responsive</span>
+                </div>
+                <div>
+                  <span className="dds1">8.9</span>
+                  <span className="dds2">Cool</span>
+                </div>
+                <div>
+                  <span className="dds1">8.9</span>
+                  <span className="dds2">Docs</span>
+                </div>
+              </div>
+              <div className="MainCardCheckbox">
+                <span>Why we love it</span>
+                <div>
+                  <label>
+                    <input type="checkbox" checked={isChecked} onChange={handleChange}/>
+                      Documentation
+                  </label>
+                </div>
+                <div>
+                  <input type="checkbox" name="vehicle2" value="Car" />
+                  <label > Easy Use</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="vehicle3" value="Boat" />
+                  <label > Out of box</label>
+                </div>
+              </div>
+              <span className="MaincardCenterspan2">
+                Show more
+              </span>
+            </div>
+            <div className="MaincardRight">
+              <div className="MaincardRightTop">
+                <span className="MaincardRightTopSpan1">9.1</span>
+                <span className="MaincardRightTopSpan2">Very Good</span>
+                <img src="/src/assets/images/4star.png" alt="" />
+              </div>
+              <div className="MaincardRightBottom">
+                <button>View</button>
+              </div>
+            </div>
+          </div>
+
+          <span className="homeContainerMainSpan">Related deals you might like for</span>
+          <DealsCard/>
         </main>
       </div>
     </div>
