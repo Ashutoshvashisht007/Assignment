@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="FooterRight">
             <span>United States</span>
-            <img src="images/Footer.png" alt="" />
+            <img src="/assets/images/Footer.png" alt="" />
         </div>
     </div>
   )

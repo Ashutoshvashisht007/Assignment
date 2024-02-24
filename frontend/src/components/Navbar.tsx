@@ -3,7 +3,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbarSearch">
-                <img src="images/IMAGE.png" alt="" />
+                <img src="/assets/images/IMAGE.png" alt="" />
                 <input type="text" />
             </div>
             <div className="navbarRight">

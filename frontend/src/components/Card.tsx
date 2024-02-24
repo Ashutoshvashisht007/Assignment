@@ -16,9 +16,9 @@ const Card: React.FC<CardProps> = ({ idx, p1, p2, rating, comment, imgg }) => {
             <div className={divClass}>
                 {(() => {
                     if (idx === 0) {
-                        return <img src="images/trophy.png" alt="trophy" className='cardHeadingIMG' />
+                        return <img src="/assets/images/trophy.png" alt="trophy" className='cardHeadingIMG' />
                     } else if(idx === 1) {
-                        return <img src="images/diamond.png" alt="diamond" className='cardHeadingIMG' />
+                        return <img src="/assets/images/diamond.png" alt="diamond" className='cardHeadingIMG' />
                     }
                 })()}
                 {(() => {
@@ -31,7 +31,7 @@ const Card: React.FC<CardProps> = ({ idx, p1, p2, rating, comment, imgg }) => {
             </div>
             <span className='cardNumber'>{idx + 1}</span>
             <div className="cardLeft">
-                <img src="images/pc.png" alt="" />
+                <img src="/assets/images/pc.png" alt="" />
                 <span>Builder 1</span>
             </div>
             <div className="cardCenter">
@@ -41,7 +41,7 @@ const Card: React.FC<CardProps> = ({ idx, p1, p2, rating, comment, imgg }) => {
                 <span className="cardCenterspan2">
                     Show more
                     {
-                        idx + 1 <= 2 ? <img src="images/bluedown.png" alt="" /> : <span></span>
+                        idx + 1 <= 2 ? <img src="/assets/images/bluedown.png" alt="" /> : <span></span>
                     }
                 </span>
             </div>
