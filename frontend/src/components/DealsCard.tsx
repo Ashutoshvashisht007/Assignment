@@ -16,7 +16,7 @@ const DealsCard: React.FC<DealsCardData> = ({data}) => {
                 <img src={data.img} alt="" />
             </div>
             <div className="DealsCardDisc">
-                <span>{data.desc}% Off</span>
+                <span>{data.discount}% Off</span>
                 <span>Limited Time</span>
             </div>
             <div className="DealsCardHeading">
