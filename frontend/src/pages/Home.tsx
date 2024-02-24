@@ -8,41 +8,41 @@ const dummyData = [
     p2: "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
     rating: "9.8",
     comment: "Exceptional",
-    img: "/src/assets/images/5star.jpg",
+    img: "images/5star.png",
   },
   {
     p1: "<b>SiteCraft 68-Inch Ultimate Web Design Studio-</b> Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)",
     p2: "[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
     rating: "9.5",
     comment: "Excellent",
-    img: "/src/assets/images/4half.jpg",
+    img: "images/4half.png",
   },
   {
     p1: "<b>WixPro 72-Inch Responsive Website Builder-</b> Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
     p2: "[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
     rating: "9.3",
     comment: "Exceptional",
-    img: "/src/assets/images/5star.jpg",
+    img: "images/5star.png",
   },
 ]
 
 const dummy2 = [
   {
-    img: "/src/assets/images/pc.png",
+    img: "images/pc.png",
     discount: 20,
     heading: "Webbuilder 1",
     desc: "Computer  Modern clasic with wix support",
     price: [39.96, 49.96, 20],
   },
   {
-    img: "/src/assets/images/pc.png",
+    img: "images/pc.png",
     discount: 20,
     heading: "Webbuilder 2",
     desc: "Computer  Modern clasic with wix support",
     price: [39.96, 49.96, 20],
   },
   {
-    img: "/src/assets/images/pc.png",
+    img: "images/pc.png",
     discount: 20,
     heading: "Webbuilder 3",
     desc: "Computer  Modern clasic with wix support",
@@ -64,14 +64,14 @@ const Home = () => {
         <span>Best Website builders in the US</span>
         <div className="homeContainerDesc">
           <div className="homeContainerDescleft">
-            <img src="/src/assets/images/Check.png" alt="check" />
+            <img src="images/Check.png" alt="check" />
             <span>Last Updated - February 22, 2020</span>
-            <img src="/src/assets/images/i.png" alt="i" />
+            <img src="images/i.png" alt="i" />
             <span>Advertising Disclosure</span>
           </div>
           <div className="homeContainerDescright">
             <span>Top Relevant</span>
-            <img src="/src/assets/images/down.png" alt="mark down" />
+            <img src="images/down.png" alt="mark down" />
           </div>
         </div>
         <div className="homeContainerTools">
@@ -99,7 +99,7 @@ const Home = () => {
           <div className="homeContainerMainCard">
             <span className='MaincardNumber'>4</span>
             <div className="MaincardLeft">
-              <img src="/src/assets/images/pc.png" alt="" />
+              <img src="images/pc.png" alt="" />
               <span>CDK</span>
             </div>
             <div className="MaincardCenter">
@@ -145,7 +145,7 @@ const Home = () => {
               <div className="MaincardRightTop">
                 <span className="MaincardRightTopSpan1">9.1</span>
                 <span className="MaincardRightTopSpan2">Very Good</span>
-                <img src="/src/assets/images/4star.png" alt="" />
+                <img src="images/4star.png" alt="" />
               </div>
               <div className="MaincardRightBottom">
                 <button>View</button>
