@@ -1,7 +1,6 @@
 .home {
     margin-top: 25px;
-    border: 2px solid black;
-    position: absolute;
+    position: relative;
     width: 1592px;
     height: 2347px;
     left: 11px;
@@ -256,6 +255,42 @@
                 @include size(400,32px);
                 color: #2C384A;
                 margin-top: 80px;
+            }
+        }
+
+        .homeContainerDealsCard{
+            @include flex(row,start,center,0);
+            gap: 20px;
+        }
+
+        .homeContainerSign{
+            @include flex(row,space-between,start,0);
+            margin-top: 37px;
+            height: 171px;
+
+            >span{
+                margin-top: 33px;
+                margin-left: 10px;
+                margin-bottom: 50px;
+                @include size(400,32px);
+                color: #5C6874;
+                width: 398px;
+                height: 88px;
+            }
+
+            >button{
+                width: 97px;
+                height: 52px;
+                border: none;
+                border-radius: 0px 12px 12px 0px;
+                background-color: #1B88F4;
+                margin-top: 41px;
+                margin-bottom: 78px;
+                margin-right: 20px;
+                color: #FFFFFF;
+                text-align: center;
+                letter-spacing: 0.7px;
+                @include size(400,14px);
             }
         }
     }

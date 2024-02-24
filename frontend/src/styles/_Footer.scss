@@ -1,0 +1,64 @@
+.Footer{
+    width: 1592px;
+    height: 452px;
+    background-color: #212731;
+    position: relative;
+
+    .FooterLeft{
+        top: 54px;
+        position: absolute;
+        margin-left: 284px;
+        display: flex;
+        flex-direction: column;
+        
+        .FooterLeft1{
+            @include size(400,16px);
+            color: #FFFFFF;
+            margin-bottom: 13px;
+        }
+
+        >span{
+            @include size;
+            color: #B6BDC4;
+            margin-bottom: 20px;
+        }
+    }
+    .FooterCenter{
+        top: 54px;
+        position: absolute;
+        margin-left: 625px;
+        display: flex;
+        flex-direction: column;
+        
+        .FooterCenter1{
+            @include size(400,16px);
+            color: #FFFFFF;
+            margin-bottom: 13px;
+        }
+
+        >span{
+            @include size;
+            color: #B6BDC4;
+            margin-bottom: 20px;
+        }
+    }
+    .FooterRight{
+        top: 119px;
+        position: absolute;
+        margin-left: 1012px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        >span{
+            @include size;
+            color: #B6BDC4;
+        }
+
+        >img{
+            width: 15px;
+            height: 9px;
+            margin-left: 10px;
+        }
+    }
+}

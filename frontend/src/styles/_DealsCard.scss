@@ -1,0 +1,97 @@
+.DealsCard {
+    width: 333px;
+    height: 425px;
+    border-radius: 12px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .DealsCardImg {
+        margin-top: 37px;
+
+        >img {
+            width: 141px;
+            height: 103px;
+        }
+    }
+
+    .DealsCardDisc{
+        @include flex(row,start,center,0);
+        width: inherit;
+        margin-left: 20px;
+        margin-top: 55px;
+
+        >span{
+            margin-right: 4px;
+            @include size;
+            color: #074786;
+            background-color: #F2F4F7;
+            border-radius: 8px;
+            line-height: 20px;
+            padding: 4px;
+        }
+    }
+
+    .DealsCardHeading{
+        margin-top: 9px;
+        margin-left: 87px;
+        margin-right: 139px;
+        >span{
+            color: #626E79;
+            @include size(700,16px);
+        }
+    }
+
+    .DealsCardPara{
+        margin-top: 7px;
+        margin-left: 20px;
+        margin-right: 29px;
+        >p{
+            @include size(400,16px);
+            color: #626E79;
+        }
+    }
+
+    .DealsCardMoney{
+        width: inherit;
+        margin-left: 20px;
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+
+        .DealsCardS1{
+            @include size(400,20px);
+            color: #5C6874;
+            width: 71px;
+            height: 28px;
+        }
+        .DealsCardS2{
+            @include size(400,14px);
+            color: #9FA9B3;
+            width: 48px;
+            height: 20px;
+            margin-left: 10px;
+            margin-top: 8px;
+        }
+        .DealsCardS3{
+            @include size;
+            color: #EF4C5D;
+            width: 63px;
+            height: 20px;
+            margin-left: 12px;
+            margin-top: 8px;
+        }
+    }
+
+    .DealsCardbtn{
+        width: 292px;
+        height: 48px;
+        border-radius: 12px;
+        border: none;
+        background-color: #1B88F4;
+        color: white;
+        margin-top: 12px;
+        @include size(400,16px);
+    }
+}

@@ -26,6 +26,30 @@ const dummyData = [
   },
 ]
 
+const dummy2 = [
+  {
+    img: "/src/assets/images/pc.png",
+    discount: 20,
+    heading: "Webbuilder 1",
+    desc: "Computer  Modern clasic with wix support",
+    price: [39.96, 49.96, 20],
+  },
+  {
+    img: "/src/assets/images/pc.png",
+    discount: 20,
+    heading: "Webbuilder 2",
+    desc: "Computer  Modern clasic with wix support",
+    price: [39.96, 49.96, 20],
+  },
+  {
+    img: "/src/assets/images/pc.png",
+    discount: 20,
+    heading: "Webbuilder 3",
+    desc: "Computer  Modern clasic with wix support",
+    price: [39.96, 49.96, 20],
+  },
+]
+
 const Home = () => {
 
   const [isChecked, setIsChecked] = useState(true);
@@ -100,8 +124,8 @@ const Home = () => {
                 <span>Why we love it</span>
                 <div>
                   <label>
-                    <input type="checkbox" checked={isChecked} onChange={handleChange}/>
-                      Documentation
+                    <input type="checkbox" checked={isChecked} onChange={handleChange} />
+                    Documentation
                   </label>
                 </div>
                 <div>
@@ -130,7 +154,20 @@ const Home = () => {
           </div>
 
           <span className="homeContainerMainSpan">Related deals you might like for</span>
-          <DealsCard/>
+          <div className="homeContainerDealsCard">
+            {
+              dummy2.map((data, idx) => (
+                <DealsCard key={idx} data={data} />
+              ))
+            }
+          </div>
+
+          <div className="homeContainerSign">
+            <span>
+            Sign up and get exclusive special deals
+            </span>
+            <button>Sign Up</button>
+          </div>
         </main>
       </div>
     </div>

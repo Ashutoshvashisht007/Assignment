@@ -1,27 +1,38 @@
 
 
-const DealsCard = () => {
-  return (
-    <div className="DealsCard">
-        <div>
-            <div>
-                <img src="/src/assets/images/pc.png" alt="" />
+interface DealsCardData{
+    data: {img: string;
+    discount: number;
+    heading: string;
+    desc: string;
+    price: number[];
+    }
+}
+
+const DealsCard: React.FC<DealsCardData> = ({data}) => {
+    return (
+        <div className="DealsCard">
+            <div className="DealsCardImg">
+                <img src={data.img} alt="" />
             </div>
-            <div>
-            <span>20% Off</span>
-            <span>Limited Time</span>
+            <div className="DealsCardDisc">
+                <span>{data.desc}% Off</span>
+                <span>Limited Time</span>
             </div>
-            <div>
-                <span>Webbuilder 1</span>
+            <div className="DealsCardHeading">
+                <span>{data.heading}</span>
             </div>
-            <div>
-                <p>Webbuilder 1</p>
-                <span>$39.96</span><span>$49.96</span><span>(20% Off)</span>
+            <div className="DealsCardPara">
+                <p>{data.desc}</p>
             </div>
-            <button>View</button>
+            <div className="DealsCardMoney">
+                <span className="DealsCardS1">${data.price[0]}</span>
+                <span className="DealsCardS2">${data.price[1]}</span>
+                <span className="DealsCardS3">({data.price[2]}% Off)</span>
+            </div>
+            <button className="DealsCardbtn">View Deal</button>
         </div>
-    </div>
-  )
+    )
 }
 
 export default DealsCard
